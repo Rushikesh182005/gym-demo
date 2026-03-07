@@ -1,0 +1,14 @@
+---
+alwaysApply: true
+---
+# IronForge Gym Project Structure
+
+- The main entry point is [app/page.js](mdc:app/page.js) with the root layout in [app/layout.js](mdc:app/layout.js).
+- Marketing sections (hero, about, gallery, programs, testimonials, lead form, footer, navbar) live under [components/sections](mdc:components/sections).
+- Reusable UI primitives (buttons, section tags) live under [components/ui](mdc:components/ui).
+- Supabase client configuration is defined in [lib/supabase.js](mdc:lib/supabase.js).
+- Lead-related server actions live in [lib/actions/leads.js](mdc:lib/actions/leads.js).
+- Lead validation schema (Zod) is defined in [lib/validation/leads.js](mdc:lib/validation/leads.js).
+- API routing for lead submissions is implemented in [app/api/leads/route.js](mdc:app/api/leads/route.js).
+- Database schema for Supabase is in [supabase/schema.sql](mdc:supabase/schema.sql).
+
